@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<!-- Başka bir CSS Tanımlama Yöntemi -->
+	<style>
+		/*CSS Testleri Chrome->İncele kısmında yapılması tavsiye edilir.
+			Çalışıyorsa buraya uygulanır.*/
+
+		/*Sayfada bulunan tüm table,th,td nesnelerine uygular.*/
+		table,th,td{
+			/*2px kalinliginda solid tipinde kirmizi kenarlik ekle.*/
+			border: 2px solid red;
+		}
+		/*th,td nesnelerine uygula*/
+		th,td{
+			/*her kenarindan dıştan 15px boşluk ver.*/
+			padding: 15px;
+		}
+		th{
+			/*Text'leri sola konumlandirir.*/
+			text-align: left;
+		}
+		/*table nesnesinin icindeki elemanlari table'in border'ından
+			içe doğru 15px uzaklaştırır. */
+		table{
+			border-spacing:15px ;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<!-- Tablo Oluşturma 
+			<table> : Tablo tanımlar.
+			<th>	: Tablo başlığı tanımlar.
+			<tr>	: Bir satır açar.
+			<td>	: Tanımlı satırın içine sütun tanımlar.
+	-->
+
+	<!-- width:"100"; Bulunduğu alanın tamamını kaplamasını sağlar. -->
+	<table style="width: 100%">
+		<!-- Tablo başlığı tanımlar. -->
+		<caption>Öğrenci Listesi</caption>
+		<tr>
+			<th>Ad</th>
+			<th>Soyad</th>
+			<th>Yaş</th>
+		</tr>
+
+		<tr>
+			<!-- Ali değeri yazdırılmıyor ve boşluk oluşuyor. Aziz Can ile boşluğu birleştirmek için rowspan=2 verilir. -->
+			<td rowspan="2">Aziz Can</td>
+			<!--22 değeri yazdırılmıyor ve bu yüzden tabloda boşluk oluşuyor.-->
+			<!-- Soyadı tutan td etiketine colspan=2 değeri verilerek 2 hücrelik yer kaplamasi soylenir. -->
+			<td colspan="2">Hamaşoğlu</td>
+			<!-- <td>22</td> --><!--Kasıtlı olarak kapatıldı.-->
+		</tr>
+
+		<tr>
+			<!-- <td>Ali</td> -->
+			<td>Güler</td>
+			 <td>20</td>
+		</tr>
+	</table>
+
+</body>
+</html>
