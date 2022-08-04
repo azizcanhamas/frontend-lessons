@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	 <img src="img/manzara-2.jpg" width="150" height="150">
+	 <img src="img/manzara-3.jpg" width="150" height="150">
+	 <img src="img/manzara-4.jpg" width="150" height="150">
+	 <img src="img/manzara-5.jpg" width="150" height="150">
+
+	 <!-- 
+	 	'div' etiketi belirli bir alani kapsamaya yarar.
+		'div' etiketi içerisinde başka etiketlerde olabilir.(p, span vb.)
+	 -->
+	 <!-- padding-top: div'i üst kısımdan 150px uzaklaştırır. -->
+	 <!-- background-image: div'in arka planina resim ekler. 
+		  url içerisinde tek tırnak olmalıdır. -->
+	 <div style="padding-top: 150px; background-image: url('img/manzara-2.jpg');">
+	 	<!-- padding etiketi p etiketinin her kenarindan 100px uzaklastirir. 
+	 		 padding'den sonra kaplanilan alan artar.-->
+	 	<p style="padding:100px;">
+	 		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	 	</p>
+	 </div>
+
+	 <!-- Pencere boyutuna göre uygun resim göstermeye yarar.
+		  Responsive tasarımda kullanılır. Anlık ekran genişliği 650px'den buyukse
+		  1. resim gosterilir. Genişlik 650px'den küçükse 2. resim gösterilir.
+		  Genişlik 450px'den de küçükse 3. resim gösterilir.
+	 -->
+	 <picture>
+	 	<source media="(min-width:650px)" srcset="img/manzara-1.jpg">
+	 	<source media="(min-width:450px)" srcset="img/manzara-2.jpg">
+ 		<img src="img/manzara-3.jpg">
+	 </picture>
+
+</body>
+</html>
