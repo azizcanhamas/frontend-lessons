@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th{
+            height: 50px;
+            text-align: center;
+            padding: 45px;
+            color: white;
+            background-color: rgb(194, 106, 51);
+        }
+
+        td{
+            text-align: center;
+            height: 50px;
+            /* text'leri dikey hizalar(top,middle,bottom) */
+            vertical-align: middle; 
+        }
+
+        th,td{
+            /* Sadece alt border ekle. */
+            border-bottom: 3px solid red;
+            
+        }
+
+        /* fare ile satırların üstüne gelindiği zaman arka plan rengini değiştirir. */
+        tr:hover{
+            background-color: rgb(203, 248, 172);
+        }
+
+        /*odd tek numaralı satırları coral rengine boyar.*/
+        tr:nth-child(odd){ /*even,odd*/
+            background-color: coral;
+        }
+</style>
+
+</head>
+<body>
+    <table>
+        <tr>
+            <th>İsim</th>
+            <th>Soyisim</th>
+        </tr>
+
+        <tr>
+            <td>Aziz Can</td>
+            <td>Hamasoglu</td>
+        </tr>
+
+        <tr>
+            <td>Hasan</td>
+            <td>Yilmaz</td>
+        </tr>
+
+        <tr>
+            <td>Kemal</td>
+            <td>Er</td>
+        </tr>
+
+        <tr>
+            <td>Canan</td>
+            <td>Aksu</td>
+        </tr>
+
+        <tr>
+            <td>Sinan</td>
+            <td>Güler</td>
+        </tr>
+    </table>
+</body>
+</html>

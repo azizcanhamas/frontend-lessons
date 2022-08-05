@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        table{
+            /* İki çizgi şeklinde kenar olmasını engeller. */
+            border-collapse: collapse;
+            /* default = seperate */
+
+            /* tüm genişliği kaplasın. */
+            width: 100%;
+        }
+
+        th{
+            height: 50px;
+
+            /* th'lerdeki textleri sola alır. */
+            /* text-align: left; */
+
+            text-align: left;
+            /* th'in iç kısımdan her kenarindan 45px boşluk */
+            padding: 45px;
+        }
+
+        td{
+            /* td'lerdeki textleri ortaya al. */
+            text-align: center;
+            height: 50px;
+            /*text'leri dikey hizala (top,bottom,middle)*/
+            vertical-align: middle; 
+        }
+
+        table,th,td{
+            border: 2px solid red;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- CSS Table -->
+    <!--    
+        * Table Borders
+        * Collapse Table Borders
+        * Table Width and Height
+        * Horizontal Alignment
+        * Vertical Alignment
+        * Table Padding
+        * Horizontal Dividers
+        * Hoverable Table
+        * Striped Tables
+        * Table Color
+        * Responsive Table
+        * Table-Layout
+        * Empy-cells
+    -->
+
+    <table>
+        <tr>
+            <th>İsim</th>
+            <th>Soyisim</th>
+        </tr>
+
+        <tr>
+            <td>Aziz Can</td>
+            <td>Hamasoglu</td>
+        </tr>
+
+        <tr>
+            <td>Hasan</td>
+            <td>Yilmaz</td>
+        </tr>
+    </table>
+</body>
+</html>
