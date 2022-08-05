@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        div{
+            border: 3px solid red;
+            /* default overlow değeri visible'dir. Yani taşmayı gösterir.
+              bu değerler ile div'deki metin taşar. */
+            width: 200px;
+            height: 150px;
+            background-color: aqua;
+
+            /*taşmadan sonraki kısmı göstermez. */
+            overflow: hidden;
+
+            /*taşmayı x-y ekseninde scroll bar'ı kaydırarak 
+            görebilmeyi sağlar.*/
+            overflow: scroll;
+
+            /*taşmanın olduğu eksende scrollbar verir*/
+            overflow: auto;
+
+            /*x ekseninde taşmalarda ne yapılacağını belirtir.*/
+            /*overflow-y:scroll yapılırsa taşan kısım görülebilir.*/
+            overflow-x:scroll;
+
+            /*y eksenindeki taşmalarda ne yapılacağını belirtir.*/
+            overflow-y:hidden;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- CSS Overflow 
+            * overflow: visible
+            * overflow: hidden
+            * overflow: scroll
+            * overlow : auto
+            * overflow-x and overflow-y
+    -->
+
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem corporis accusantium doloribus, itaque eaque quam rerum cum doloremque. Possimus porro modi illum minima sit! Cupiditate quidem cumque reprehenderit alias eos exercitationem a nesciunt incidunt laudantium, nemo earum eum deleniti blanditiis culpa distinctio ad! Voluptatibus inventore asperiores voluptates temporibus veniam! Autem quibusdam accusamus quae hic aspernatur facere maiores eveniet eos repudiandae vero incidunt ea quo aut explicabo alias amet expedita, deleniti consequatur! Amet possimus itaque adipisci harum atque impedit ipsam aperiam, nesciunt nulla placeat animi eos earum ullam ipsum et eum dolore veritatis dolores perspiciatis quidem. Aut quas magnam nisi sequi nobis dolores, quibusdam cumque itaque est eveniet, illo harum sint error! Et labore natus ipsa, corporis nesciunt eum dolorum repellat deleniti amet, eaque ab aperiam molestiae libero maxime! Adipisci exercitationem doloremque soluta impedit nam dolor quaerat tempora minus commodi earum! Reprehenderit dicta error ipsa veritatis tenetur neque tempore illo necessitatibus! Porro aspernatur, commodi laboriosam cum consectetur cumque odio, ea quas beatae, natus placeat. Modi expedita debitis voluptates sunt est exercitationem, aut cupiditate sit? Placeat, perspiciatis.
+    </div>
+
+</body>
+</html>
