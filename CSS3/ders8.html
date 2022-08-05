@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1{
+            /* çerçeve tipi düz */
+            border-style: solid;
+            /* çerçeve kalınlığı 5px */
+            border-width: 5px;
+            /*  çerçeve rengini siyah yap. */
+            /*  VSCode seçili rengin yanında kutucuk çıkar.
+                Bu kutucuğun üstüne fare ile gelindiğinde renk ayarlanabilir.
+                Veyahut RGB değer verilebilir. Veya #111111 gibi hex kod verilebilir.
+                RGB'ye 4. parametre olarak 0...1 aralığında değer verilirse opaklık ayarı yapılabilir.
+            */    
+                /* border-color: red; */
+                border-color:#123456;
+                /* border-color: rgb(255, 255, 8,0.4); */
+            
+            /* Bu şekilde de tanımlanabilir. */
+            /* border: 3px solid red; */
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!-- CSS COLORS -->
+
+    <!-- 
+        CSS Renkler
+            * Text color
+            * Background color
+            * Border color
+            * RGB Value
+            * HEX Value
+
+        Text color: Yazı rengidir.
+        Background color: Bir yazının arka plan rengidir.
+        Border color: Çerçeve rengidir.
+        RGB Value: R,G,B renk kodudur.
+        HEX Value: #111111 gibi hexadecimal renk kodudur.
+    -->
+
+    <!-- h1'in kapladigi alanin rengini ayarlayacak. -->
+    <h1 style="background-color: violet";>Violet</h1>
+    <h1 style="background-color: aquamarine;">Aquamarine</h1>
+
+    <!-- lorem6 + TAB : 6 kelimelik lorem ekler. -->
+    <p style="background-color: red;">Lorem ipsum dolor sit amet consectetur.</p>
+
+    <!-- Yazının rengini blueviolet yapacak. -->
+    <p style="color: blueviolet;">Lorem, ipsum dolor.</p>
+
+    <!-- h1'in arkaplan rengini aqua, içerdiği yazı rengini blue yapacak. -->
+    <h1 style="background-color: aqua; color:blue">Lorem ipsum dolor sit amet.</h1>
+
+</body>
+</html>
