@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Stilleri</title>
+
+    <style>
+        .dotted{
+            /* ... şeklinde border */
+            border-style: dotted;
+
+            /* border'ın kalınlığını ayarlar.
+            thin,medium,thick değerlerini alir. */
+            border-width: thick;
+        }
+
+        .dashed{
+            /* --- şeklinde border */
+            border-style: dashed;
+            /* border kalınlığını 15px yapar. */
+            border-width: 15px;
+        }
+
+        .solid{
+            /* düz çizgi şeklinde border */
+            border-style: solid;
+        }
+
+        .double{
+            /* Çift çizgi şeklinde border. */
+            border-style: double;
+            /* her kenar için ayrı ayrı kalınlık değeri atama. */
+            border-width: 10px 2px 5px 3px;
+        }
+
+        .groove{
+            /* opaklık değeri düşük border */
+            border-style: groove;
+        }
+
+        .ridge{
+            /* çıkıntı border.  */
+            border-style: ridge;
+        }
+
+        .inset{
+            /* içe gömük border */
+            border-style: inset;
+        }
+
+        .outset{
+            /* dışa çıkık border. */
+            border-style:outset;
+        }
+
+        .none{
+            /* Çerçeve yok. */
+            border-style: none;
+        }
+
+        .hidden{
+            /* gizlenmiş çerçeve */
+            border-style: hidden;
+        }
+
+        .mix{
+            /* Birden fazla border stilinin aynı anda kullanılması. */
+            /* soldan sağa doğru saat yönünde kenarlara tanımlar. */
+            border-style: dotted dashed solid groove ;
+        }
+
+        .farkli{
+            /* Her kenar için ayrı ayrı border stili. */
+            border-top-style: dotted;
+            border-right-style: solid;
+            border-bottom-style: dotted;
+            border-left-style:solid ;
+        }
+
+        .shorthand{
+            /* tek satirda border kalinligi,stili,rengi ayarlama. */
+            border:5px double red;
+        }
+
+        .test{
+            border-left: 7px solid rgb(65, 19, 135);
+            border-top: 7px solid rgb(65, 19, 135);
+        }
+
+        .rad1{
+            border:5px solid rgb(65, 19, 135);
+            /* border koselerini yuvarlama */
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <!-- CSS BORDER 
+            * Border Styles
+            * Border Width
+            * Border Color
+            * Border Individual Sides
+            * Border-Shorthand Property
+    -->
+
+    <h2>Border Stilleri</h2>
+    <p class="dotted">Dotted border</p>
+    <p class="dashed">Dashed border</p>
+    <p class="solid">Solid border</p>
+    <p class="double">Double border</p>
+    <p class="groove">Groove border</p>
+    <p class="ridge">Ridge border</p>
+    <p class="inset">Inset border</p>
+    <p class="outset">Outset border</p>
+    <p class="none">None border</p>
+    <p class="hidden">Hidden border</p>
+    <p class="mix">Mix border</p>
+    <p class="farkli">Farklı border stilleri</p>
+    <p class="shorthand">Aziz Can</p>
+    <p class="test">Hamasoglu</p>
+    <p class="rad1">ANKARA</p>
+</body>
+</html>

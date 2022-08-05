@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        div{
+            border: 5px solid blue;
+            background-color: red;
+            /* padding-top: 50px;
+            padding-left: 80px ;
+            padding-right: 30px;
+            padding-bottom:90px; */
+
+            /* tek satirda top-right-bottom-left siralamasiyla yazilabilir. */
+            /* padding: 50px 30px 90px 80px; */
+
+            /* ust-alt=50px sag-sol=80px */
+            /* padding: 50px 80px; */
+
+            /* her kenardan 50px */
+            /* padding: 50px; */
+
+            /* div genişliği 400px yapılıyor.
+                yazi tum div'i kaplar. */
+            width: 800px;
+            /* padding 100px verildigi zaman yazi div'in
+                kenarlarindan 100px uzaklasir. bu padding'ten
+                sonra 800px div genişliği + 100px padding + 5px border
+                olmak uzere div'in toplam alani 905px oldu. Yani bir üst satırda
+                tanımlanan 800px tam olarak işlevini yerine getiremedi. */
+            padding: 100px;
+            /* bu tanımlama ile div genişliği 800 oluyor. */
+            box-sizing: border-box;
+
+            /* NOT : Element ölçmek için Chrome "Page Ruler eklentisi kullanılabilir." 
+                https://chrome.google.com/webstore/detail/page-ruler/jcbmcnpepaddcedmjdcmhbekjhbfnlff/related?hl=tr
+                * Dosya URL'lerine erişim izin ver özelliği Uzantıyı yönet kısmından açılmalıdır!
+            */
+        }
+    </style>
+
+</head>
+<body>
+    <!-- CSS Padding -->
+    <!--  *  Individual Slides
+          *  Shorthand Property 
+    -->
+    <!-- Padding etiketin içinde boşluğu tanımlar. 
+        top-left-right-bottom ile istenilen kenarlari ayarlanabilir. -->
+    <h2>Padding kullanimi</h2>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ipsum qui esse numquam, quam ratione.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique blanditiis obcaecati accusamus! Nostrum, consequatur eaque?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni officiis, vel quis similique dignissimos explicabo!
+    </div>
+</body>
+</html>
