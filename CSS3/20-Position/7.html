@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        img{
+            /* şu an absolute'ın parent'ı body olduğundan sayfanın her yerine taşınabilir. */
+            position: absolute;
+            top:0px;
+            left:0px;
+            /* yazı ile resimler üst üste biniyor.
+                resmi alta almak için z-index:-1 verilir. */
+            z-index: -1;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!-- Overlapping Elements -->
+    <h1>Aziz Can</h1>
+    <img src="img/1.jpg" alt="">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque nesciunt ipsum laborum iure exercitationem eum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos possimus itaque beatae. Error, tempora itaque!</p>
+</body>
+</html>

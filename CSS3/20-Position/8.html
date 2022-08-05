@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        .container{
+            position: relative;
+        }
+
+        .subdiv{
+            position: absolute;
+            /* top:10px;
+            left: 20px; */
+
+            /*serbest konumlandirma*/
+            right: 10px;
+            top: 10px;
+
+            top: 50%;
+            left: 50%;
+        }
+        img{
+            /* opaklik 0...1 araliginda deger alir. 1 tam görünürdür. */
+            opacity: 0.5;
+            /*img .container'in icinde yer aldiginda container'in genisliginin tamamini kaplar.*/
+            width: 100%;
+            /*img'in yukseligi her zaman 300px'dir*/
+            height: 300px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <img src="img/1.jpg" alt="">
+        <div class="subdiv">
+            Soldan Yazı
+        </div>
+    </div>
+</body>
+</html>
