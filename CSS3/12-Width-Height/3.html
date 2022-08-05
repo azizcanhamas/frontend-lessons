@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .paragraf1{
+            /* paragraf1 isimli paragrafin icerigi ne olursa olsun yuksekligini 100px sinirlandir.
+            eger tasiyorsa scroll cikacaktir. tasmiyorsa normal sekilde gozukur.*/
+            /* max-height: 100px; */
+            /* overflow: auto; */
+
+
+        }
+
+        .paragraf2{
+            /* max-width:100px'de verilirse scroll acar. 
+                Verilmezse asagi dogru sayfayi uzatir. */
+            /* max-width: 100px; */
+            /* overflow: auto; */
+            
+            /* paragraf2'nin icerigi 500px'den az alan kaplayacak olsa bile
+                bu tanimlamadan dolayi en az 500px kaplar. icerik 500px'den fazlaysa
+                icerik kadar alan kaplar. */
+            min-height: 500px;
+            border: 1px solid black;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h2>Max Height ve Max Width Özellikleri</h2>  
+
+    <!-- Mıgır Metin Üretme -->
+    <!--  
+        * lipsum.com sitesinde biraz asagi kaydirinca istenilen
+        paragraf adedinde, kelime sayısında metinler türetilebilir.
+    -->
+
+    <p class="paragraf1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel justo vitae dui volutpat rutrum. 
+        Fusce facilisis eros mi, eget tincidunt nisl finibus nec. Maecenas consequat sodales lorem. Nullam venenatis
+        tellus sed dictum efficitur. Suspendisse sollicitudin eu nibh vitae hendrerit. Vivamus orci tortor,
+        placerat at malesuada id, porta vitae odio. Fusce nibh metus, tristique eu tortor sollicitudin, ornare
+        laoreet tellus. Nunc ut eros aliquam mi sollicitudin eleifend. Aliquam sodales malesuada odio.
+        Sed sollicitudin lacus a est feugiat pellentesque.
+        Integer tempor nec tellus hendrerit cursus. Pellentesque vitae purus tempor, ullamcorper tellus et,
+        rhoncus leo. Donec non ante consequat, malesuada magna nec, sodales mi. Donec id dictum ex. Vivamus
+        iaculis mollis ante. Sed pretium vestibulum neque, a bibendum lectus pellentesque in. Nam auctor lacus
+        felis, sed gravida nulla finibus vel. Proin eget erat scelerisque, malesuada nulla quis, vehicula enim.
+        Aliquam erat volutpat. Curabitur convallis gravida sem eu elementum. Fusce dictum ante a felis lacinia sodales.
+        Vestibulum rutrum blandit mattis. Nunc ac nisl id mauris gravida consequat eget eget nunc. Praesent faucibus id massa
+        quis efficitur. Aliquam erat volutpat. Suspendisse neque enim, venenatis a nisi eu, fringilla vehicula lacus. Fusce
+        vitae ipsum in odio iaculis lacinia vitae nec tellus. Etiam vel laoreet magna, et porta nunc. Etiam in ipsum nisl.
+        Sed cursus vestibulum gravida. Aenean eleifend nunc vel elit luctus molestie. Vestibulum eu egestas mauris. Praesent
+        quis enim vel tortor consectetur molestie a id quam.
+    </p>
+
+    <p class="paragraf2">
+        Aenean sed mauris vitae tortor fringilla interdum. Praesent id massa at neque elementum euismod sed eu justo. Integer
+        nec nulla ut tellus dignissim tincidunt. Sed magna lectus, bibendum feugiat tristique eget, vestibulum eget dolor.
+        Sed porttitor mi magna. Vestibulum justo tortor, aliquam at pulvinar at, consequat in risus. Aliquam erat volutpat.
+        Phasellus dignissim enim placerat velit sodales lacinia. Duis id quam ac magna mollis molestie id vitae dolor. Pellentesque commodo,
+        lectus rutrum volutpat vulputate, nulla lorem ornare libero, et malesuada mi dolor at odio. Maecenas consequat nunc vel mi
+        tincidunt, quis cursus odio iaculis. Phasellus ut dictum justo.
+        Aenean vestibulum magna luctus massa scelerisque, nec condimentum ligula sollicitudin. Vivamus non leo tincidunt, 
+        lacinia sapien non, vestibulum risus. Aliquam lorem nulla, iaculis quis tellus nec, lacinia hendrerit dui. Maecenas 
+        augue ipsum, ornare nec orci at, bibendum mollis urna. Pellentesque cursus consequat magna in fermentum. Morbi vulputate 
+        justo et ipsum sollicitudin, ut vehicula magna faucibus. Etiam vestibulum lorem purus, sed finibus justo ultricies eu.
+        Quisque consectetur quis ipsum sit amet venenatis. Vestibulum ut rutrum massa. Donec non arcu eu urna suscipit egestas a et nisi. 
+        Curabitur hendrerit eget arcu a lobortis. Nunc placerat augue at euismod auctor. Mauris sed pellentesque risus, id ultricies sem. 
+        Praesent accumsan ligula at lorem rhoncus feugiat.
+        Aenean sed mauris vitae tortor fringilla interdum. Praesent id massa at neque elementum euismod sed eu justo. Integer
+        nec nulla ut tellus dignissim tincidunt. Sed magna lectus, bibendum feugiat tristique eget, vestibulum eget dolor.
+        Sed porttitor mi magna. Vestibulum justo tortor, aliquam at pulvinar at, consequat in risus. Aliquam erat volutpat.
+        Phasellus dignissim enim placerat velit sodales lacinia. Duis id quam ac magna mollis molestie id vitae dolor. Pellentesque commodo,
+        lectus rutrum volutpat vulputate, nulla lorem ornare libero, et malesuada mi dolor at odio. Maecenas consequat nunc vel mi
+        tincidunt, quis cursus odio iaculis. Phasellus ut dictum justo.
+        Aenean vestibulum magna luctus massa scelerisque, nec condimentum ligula sollicitudin. Vivamus non leo tincidunt, 
+        lacinia sapien non, vestibulum risus. Aliquam lorem nulla, iaculis quis tellus nec, lacinia hendrerit dui. Maecenas 
+        augue ipsum, ornare nec orci at, bibendum mollis urna. Pellentesque cursus consequat magna in fermentum. Morbi vulputate 
+        justo et ipsum sollicitudin, ut vehicula magna faucibus. Etiam vestibulum lorem purus, sed finibus justo ultricies eu.
+        Quisque consectetur quis ipsum sit amet venenatis. Vestibulum ut rutrum massa. Donec non arcu eu urna suscipit egestas a et nisi. 
+        Curabitur hendrerit eget arcu a lobortis. Nunc placerat augue at euismod auctor. Mauris sed pellentesque risus, id ultricies sem. 
+        Praesent accumsan ligula at lorem rhoncus feugiat.
+        Aenean sed mauris vitae tortor fringilla interdum. Praesent id massa at neque elementum euismod sed eu justo. Integer
+        nec nulla ut tellus dignissim tincidunt. Sed magna lectus, bibendum feugiat tristique eget, vestibulum eget dolor.
+        Sed porttitor mi magna. Vestibulum justo tortor, aliquam at pulvinar at, consequat in risus. Aliquam erat volutpat.
+        Phasellus dignissim enim placerat velit sodales lacinia. Duis id quam ac magna mollis molestie id vitae dolor. Pellentesque commodo,
+        lectus rutrum volutpat vulputate, nulla lorem ornare libero, et malesuada mi dolor at odio. Maecenas consequat nunc vel mi
+        tincidunt, quis cursus odio iaculis. Phasellus ut dictum justo.
+    </p>
+
+</body>
+</html>
