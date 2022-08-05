@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+
+        }
+
+       .box{
+        float: left;
+        width: 33.33%;
+        /*2px border ekleyince 3 kutu yan yana sigmiyor.*/
+        /*box-sizing:border-box verilerek width degerinin artmamasi saglanmalidir.*/
+        /*bu sayede border+padding+content uclusunun toplami hep aynidir.*/
+        border: 2px solid salmon;
+        /*width degismedi, height artti*/
+        padding: 50px;
+        box-sizing: border-box;
+        text-align: center;
+       }
+       
+       .disDiv{           
+            margin-bottom: 100px;
+       }
+
+       /*margin-bottom .box'a verilen float:left ozelliginden dolayi calismiyor.
+        bunun icin asagidaki clear-hack tanimlandi.*/
+       .disDiv::after{
+        content: "";
+        clear: both;
+        display: table;
+       }
+    </style>
+</head>
+<body>
+    <h2>Eşit Kutular</h2>
+    <!-- Kısayol : div > div*3 > p -->
+    <div class="disDiv">
+        <div class="box" style="background-color: silver;">
+            <p>Yazi</p>
+        </div>
+        <div class="box" style="background-color: silver;">
+            <p>Yazi</p>
+        </div>
+        <div class="box" style="background-color: silver;">
+            <p>Yazi</p>
+        </div>
+    </div>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quam eos quis at, nihil dolores iste tempore dolorem nisi repellat est eum beatae, corrupti earum aut atque reprehenderit. Autem, sapiente perspiciatis. Iste tenetur fuga porro, facilis delectus architecto voluptates, consequatur earum molestiae ut eligendi. Autem qui ad quibusdam dolores maxime iste illum assumenda. Perspiciatis dignissimos qui labore atque magnam vel autem, distinctio dolorum quo nobis dolor ipsa dolorem unde quaerat. Necessitatibus neque culpa facere, omnis quaerat cumque quam reiciendis delectus eos quis exercitationem mollitia quas fuga deleniti eaque doloribus dolor dignissimos sint quisquam id. Sit adipisci perferendis ex delectus neque!</p>
+</body>
+</html>

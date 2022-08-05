@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        ul{
+            /* liste basi sekilleri kaldirildi. */
+            list-style-type: none;
+
+            /*liste sayfanin en sol-ust kosesine alindi.*/
+            margin: 0;
+            padding: 0;
+
+            /*tum listenin arka plan rengi siyah yapildi.*/
+            background-color: black;
+
+            /*asagida tum li elemanlarina float:left verildiginden ust uste bindi.
+            bundan dolayi kapsayici olan ul'e overflow:auto verildi.*/
+            overflow: auto;
+        }
+
+        li{
+            /* liste elemanlari asagi dogru degil de, yan yana yapildi. */
+            float: left;
+
+            /*navbar'lar icerden 10px genisletildi.
+            Bu sayede hem butonlar birbirinden uzaklasti,
+            hem genel navbar govdesi asagi dogru uzadi.*/
+            padding: 10px;
+        }
+
+        a{
+            /* padding islemedigi icin verilmisti. */
+            /* display:inline-block; */
+
+            /*yazi rengi beyaz yapildi.*/
+            color:white;
+
+            /*yazilar ortalandi.(zaten orta)*/
+            text-align: center;
+
+            /* link ozelliginden dolayi gelen alti-cizili gorunumu kaldirildi. */
+            text-decoration: none;
+        }
+
+        .home{
+            /* Home butonu dikkat cekmesi icin arka plani kirmizi olarak ayarlandi. */
+            background-color: red;
+        }
+
+        /* navbar'daki seceneklerin ustune gelindigi zaman arka plan rengi coral yapildi. */
+        li:hover{
+            background-color: coral;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- NAVBAR YAPIMI -->
+    <!-- KISAYOL: ul>li*4>a -->
+    <ul>
+        <li class="home"><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+</body>
+</html>

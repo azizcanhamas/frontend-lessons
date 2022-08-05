@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .div1{
+            width: 700px;
+            /* height: 50px; */
+            border: 2px solid black;
+            float: right;
+            margin: 10px;
+
+            /* width height degerleri kesin olarak piksel cinsinden
+            belirtildiyse overflow:auto scrollbar verir.
+            eger height degeri verilmediyse div'i uzatir. */
+            overflow: auto;
+        }
+
+        img{
+            width:100px;
+            height: 100px;
+            /* bu property olmayinca aşiri taşma oluyor. 
+            olduktan sonra hala taşma var.*/
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <h2>Clear Kullanmadan</h2>
+    <div class="div1">
+        <img src="img/manzara-1.jpg" alt="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, veniam! Nobis fugit sit hic quas, eaque perspiciatis? Earum est asperiores deserunt atque ipsum, esse ab, possimus quaerat assumenda nihil, rem recusandae minus numquam. Maxime nulla officia sunt natus eos accusantium culpa atque modi debitis eligendi!
+    </div>
+</body>
+</html>

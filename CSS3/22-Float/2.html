@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        .div1{
+           width: 100px;
+           height: 50px;
+           border: 2px solid red;
+           float: left;
+           margin: 10px;
+        }
+
+        .div2{
+            border: 2px solid blue;
+            /* bu property olmadigi zaman div1'e verilen float:left:
+                ozelliginden dolayi div2 div'in alanini isgal ediyor. 
+                div1'e left verildigi icin bu elemanin div1'in float
+                etkisinden kurtulmasi icin clear left verilir.
+                div1'e float:right verilirse div2'e clear:right verilir.*/
+            clear: left;           
+        }
+
+    </style>
+
+</head>
+<body>
+    <h2>Clear Kullanilmadan</h2>
+    <div class="div1">div1</div>
+    <div class="div2">div2</div>  
+</body>
+</html>

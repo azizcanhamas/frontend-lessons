@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        /* Descendant: 'div'in altindaki 'p' demektir. */
+        /* Gozlemlendigi uzere section'in altindaki p'yi de kapsadi.*/
+        /* (Descendant selector) */
+        div p{
+            background-color: blueviolet;
+        }
+
+        /*Parent altindaki sadece cocuklari almak istiyorsak
+        yani div altindaki sadece "Paragraf 1" ve "Paragraf 2"
+        almak istiyorsak (Child selector)*/
+        div > p{
+           background-color: aqua; 
+        }
+
+        /*Bir etiketi kullandiktan hemen sonra gelen ayni seviyedeki
+        etiketi nitelemek icin, yani div'i kullandik ve ondan sonra
+        gelen sadece 'Paragraf 4' nitelemek icin (Adjacent Sibling)*/
+        div + p{
+            background-color: bisque;
+        }
+
+        /*Bir etiket ile olan ayni seviyedeki tüm etiketleri
+        nitelemek icin, yani paragraf 4 ve paragraf 5 için.
+        (General sibling)*/
+        div ~ p{
+            background-color: brown;
+        }
+
+    </style>
+
+    
+</head>
+<body>
+    <!-- CSS Combinator(Seçici) 
+            * CSS Combinators
+            * Descendant Selector
+            * Child Selector
+            * Adjacent Sibling Selector
+            * General Sibling Selector
+    -->
+
+    <!-- Descendant Selector : "Alt soy" anlami var. -->
+    
+    <div>
+        <p>Paragraf 1</p>
+        <p>Paragraf 2</p>
+        <section><p>Paragraf 3</p></section>   
+    </div>
+
+    <p>Paragraf 4</p>
+    <p>Paragraf 5</p>
+</body>
+</html>
