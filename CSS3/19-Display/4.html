@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img{
+            width: 100%;
+            height: 100%;          
+        }
+
+        .imgBox{
+            width: 20%;
+            border: 2px solid black;
+            /* DIV'LERIN YAN YANA ALINMASI
+            display:inline özelliği div'leri yan yana almadi.
+                display:inline-block çalışıyor.
+            float:left'de yan yana almak icin kullanılabilir.*/
+            /* float: left;  */
+
+            /*inline-block width ve height değerlerine sahip olabilir.
+              ancak display:inline bu özelliklere sahip olamaz.*/
+              /*Bu örnekte inline-block daha iyi çalışıyor.*/
+            display: inline-block;
+
+            margin: 20px;
+            padding: 15px;
+            
+        }
+        button{
+            width: 100%;
+            /* height: 100%; */
+        }
+        
+    </style>
+
+
+</head>
+    <body>
+        <!-- NOT: Aynı amaç için kullanınlan resimlerin boyutları aynı olursa daha iyi tasarım yapılmış olur. -->
+        <div class="imgBox" id="imgBox1">
+            Resim1<br>
+            <img src="img/1.jpg" alt=""/>
+
+            <!-- onclick butona tiklandiginda calisacak js metodunu belirtir. -->
+            <button onclick="removeElement()">Kaldır</button>
+        </div>
+
+        <div class="imgBox" id="imgBox2">
+            Resim2<br>
+            <img src="img/2.jpg" alt=""/>
+            <button onclick="hideElement()">Gizle</button>
+        </div>
+        
+        <div class="imgBox" id="imgBox3">
+            Resim3<br>
+            <img src="img/3.jpg" alt=""/>
+            <button onclick="resetElement()">Resetle</button>
+        </div>
+
+    </body>
+
+    <script>
+        // Kaldır butonuna tıklandığı zaman bu metot çalışacak.
+        function removeElement(){
+            // 'imgBox1' id'li elemani getir.
+            //style ile CSS'ine giriyoruz.
+            //display:none ile elemani kaldiriyoruz.
+            document.getElementById("imgBox1").style.display="none";
+        }
+
+        function hideElement(){
+            document.getElementById("imgBox2").style.visibility="hidden";
+        }
+
+        function resetElement(){
+            //imgBox1'i sayfada göster
+            document.getElementById("imgBox1").style.display="inline-block";
+            //imgBox2'i görünür yap.
+            document.getElementById("imgBox2").style.visibility="visible";
+        }
+    </script>
+
+</html>

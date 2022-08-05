@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        li{
+            /* li'nin default degeri olan block'u inline yaptik.
+                bu yuzden maddeler yan yana yerlestiler.  */
+            display: inline;
+        }
+
+        ul{
+            display: inline;
+        }
+
+        /* span normalde inline oldugundan display degeri inline'dir.
+            Bu yüzden degisiklik olmadikca yan yana yazilirlar.
+            Ancak asagidaki tanimlamadan dolayi alt alta yazilirlar.
+        */
+        span{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- VSCode Kısayol: ul>li*3>a + Enter -->
+    <ul>
+        <li><a href="">HTML</a></li>
+        <li><a href="">CSS</a></li>
+        <li><a href="">Javascript</a></li>
+    </ul>
+
+    <!-- Span'lar yeni satira yazildi. Çünkü <ul> etiketi block-level
+         oldugundan display degeri block'tur. 
+         Yukarda tanimlanan ul{display:inline;} sayesinde yeni satira inmezler. 
+    -->
+    <span>C#</span>
+    <span>Java</span>
+    <span>SQL</span>
+</body>
+</html>
