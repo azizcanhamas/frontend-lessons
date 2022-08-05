@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Class çağırma '.' (nokta) ile yapılır. */
+        .yazi{
+            text-align: center;
+            color: red;
+        }
+
+        .baslik{
+            background-color: aqua;
+        }
+
+        /* 'aziz' sınıfından hem h3 hem h4 etiketleri türemektedir.
+            ancak aziz sınıfı h3.aziz olarak tanımlandığı için
+            belirtilen özellikleri yalnızca h3 sınıfı kullanabiliyor.*/
+        h3.aziz{
+            background-color: violet;
+        }
+
+        /* id ile cagirma */
+        #lorem{
+            text-align: right;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- ID & CLASS KAVRAMLARI -->
+
+    <!-- 
+        Class selector'ünü birçok kez kullanabilirken ID' selector'ünü yalnızca bir kere kullanabiliriz.
+        ID ve Class özellikleri etiketlere INLINE olarak verilir.
+        Bir etikete birden fazla class boşluk bırakılarak tanımlanabilir.
+     -->
+
+     <!-- h1 etiketi'ne hem 'yazi' 'baslik' sinifi tanimlanmis oldu. -->
+     <h1 class="yazi baslik">ILERI SEVIYE FRONTEND</h1>
+     <p class="yazi">TEMEL SEVIYE BACKEND</p>
+
+     <h3 class="aziz">Deneme-h3</h3>
+     <h4 class="aziz">Deneme-h4</h4>
+
+     <!-- ID sadece bir kez tanimlanabilir. Başka hiçbir etikete verilemez. Bunun için class kullanilmalidir. -->
+     <p id="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+</body>
+</html>
