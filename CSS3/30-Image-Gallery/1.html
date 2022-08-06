@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        div.gallery{
+            float: left;
+            width: 180px;
+            margin: 5px ;
+            border: 4px solid black;
+        }
+
+        div img{
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc{
+            padding: 5px;
+            background-color: rgb(9, 143, 42);
+            text-align: center;
+        }
+
+        div.gallery:hover{
+            border: 4px solid blue;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 
+        * CSS Image Gallery
+        1- https://picsum.photos/ sitesine gidilir.
+        2- Aşağı kaydırıldığında "https://picsum.photos/200/300" linkine tıklanır.
+        3- linkteki 200 değeri verilen fotoğrafın genişliğini 300 değeri yüksekliğini belirtir.
+        4- Bu değerlerden önce gelen numara ise ID'yi verir.
+        5- Manuel olarak picsum.photos/400 girilirse 400x400 random photo verir.
+        6- Manuel olarak picsum.photos/400/200 verilirse 400'e 200 boyutunda random foto verir.
+        7- Projeye 4 adet fotoğraf dahil edilmiştir.
+
+        8- Bu projede CSS ile resim galerisi yapilmistir.
+     -->
+
+     <div class="gallery">
+        <a target="_blank" href="img/1.jpg">
+            <img src="img/1.jpg">
+        </a>
+        <div class="desc">
+            Resim-1
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="img/2.jpg">
+            <img src="img/2.jpg">
+        </a>
+        <div class="desc">
+            Resim-2
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="img/3.jpg">
+            <img src="img/3.jpg">
+        </a>
+        <div class="desc">
+            Resim-3
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="img/4.jpg">
+            <img src="img/4.jpg">
+        </a>
+        <div class="desc">
+            Resim-4
+        </div>
+    </div>
+     
+</body>
+</html>
