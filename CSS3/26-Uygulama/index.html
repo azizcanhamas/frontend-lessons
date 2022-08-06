@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body{
+            /* navbarContainer'in sayfanin en sol-üst köşesine sıfırlanması için */
+            margin: 0;
+        }
+
+        /* ================== HEADER SECTION ================ */
+
+        #navbarContainer{
+            background-color: rgb(54, 53, 53);
+            display: inline-block;
+            width: 100%;
+            color: white;
+        }
+
+        ul.navbarUl{
+            /*ul govdesinin container'in en soluna yapismasi icin  */
+            padding: 0;
+            /* ul'un sayfanın üstüne tam yapismasi icin */
+            margin: 0;
+        }
+
+        .navbarLi{
+            /* li'lerin birbirine yapişmasi için */
+            float: left;
+            display: inline;
+            padding: 32px;
+        }
+
+        #home{
+            background-color: rgb(6, 160, 6);
+        }
+
+        #home:hover{
+            background-color: rgb(9, 7, 127);
+        }
+
+        .navbarLi:hover{
+            background-color: rgb(9, 7, 127);
+        }
+
+
+
+        /* ================== BODY SECTION =================== */
+        #bodyContainer{
+            position:relative;
+            background-color: rgb(144, 140, 140);
+            width: 100%;
+            height: 90%;
+            padding: 18.8%;
+            box-sizing: border-box;
+        }
+
+        #categories{
+            position: absolute;
+            background-color: rgb(255, 255, 255,0.5);
+            height: 86%;
+            width: 17%;
+            top:7%;
+            left:3%;
+            padding-left: 3%;
+            padding-right: 3%;
+            padding-top: 0.7%;
+            box-sizing: border-box;
+        }
+
+        ul.categoriesUl{
+            list-style: none;
+            padding-inline-start: 0px;
+            margin-block-start: 5%;
+            margin-block-end: 1%;
+
+        }
+
+        ul.categoriesUl li{
+            background-color: rgb(6, 160, 6);
+            border: 2px solid black;
+            padding-inline-start: 0px;
+            margin-bottom: 15px;
+            padding: 9%;
+            text-align: center;
+        }
+
+        ul.categoriesUl li:hover{
+            background-color: rgb(9, 7, 127);
+            color: white;
+        }
+
+
+
+        /* ==================== CONTENT SECTION =================== */
+        #content{
+            position: absolute;
+            background-color: rgb(255, 255, 255,0.5);
+            width: 65%;
+            height: 86%;
+            left:350px;
+            bottom: 40px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        #contentHeader{
+            background-color: rgb(6, 160, 6,0.5);
+            position: inherit;
+            width: 97%;
+            height: 12%;
+            left: 20px;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: 2.5vw;
+            font-weight: bold;
+        }
+
+        #contentContent{
+            background-color: rgb(6, 160, 6,0.5);
+            position: inherit;
+            width: 97%;
+            height: 78%;
+            top: 17%;
+            left: 2%;
+            padding: 2%;
+            box-sizing: border-box;
+            font-size: 1.5vw;
+            overflow: auto;
+        }
+
+        #footerContainer{
+            background-color: rgb(54, 53, 53);
+            text-align: center;
+            padding: 2%;
+            box-sizing: border-box;
+            color: white;
+            font-size: large;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <div id="navbarContainer">
+        <ul class="navbarUl">
+            <li class="navbarLi" id="home">Home</li>
+            <li class="navbarLi" id="news">News</li>
+            <li class="navbarLi" id="contact">Contact</li>
+            <li class="navbarLi" id="about">About</li>
+        </ul>
+    </div>
+
+    <div id="bodyContainer">
+        <div id="categories">
+            <ul class="categoriesUl">
+                <li>The Flight</li>
+                <li>The City</li>
+                <li>The Island</li>
+                <li>The Food</li>
+                <li>The People</li>
+                <li>The History</li>
+                <li>The Oceans</li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <div id="contentHeader">
+                Lorem ipsum dolor sit amet.
+            </div>
+            <div id="contentContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ut, dolorem officia fugiat vitae repudiandae enim at totam minima omnis obcaecati architecto soluta consectetur repellat assumenda nulla quos optio tempora. Consequuntur nihil veniam harum aspernatur facere, quas vero laborum! Esse quos quibusdam inventore pariatur ipsa quaerat nesciunt quod dolor tenetur quasi vel ut, consequatur saepe obcaecati, distinctio mollitia accusantium corrupti ab assumenda cupiditate est. Sunt eum nostrum, ducimus iusto mollitia quibusdam perspiciatis iure nesciunt. Commodi quod delectus ad ducimus error accusamus molestias provident autem impedit aliquam facilis, corporis cupiditate quae cum corrupti vitae, magnam natus tempore nihil voluptatibus, consequuntur quia laborum. Numquam enim quos odit nihil repellendus fugiat hic rerum totam, labore magni ut reprehenderit, fuga aut sunt vitae sit similique, distinctio non animi tempore. Obcaecati a amet enim! Doloribus modi reiciendis veniam eum, atque neque sit dolorum sed esse totam est culpa officiis consequatur in aperiam quia quibusdam quae.</div>
+        </div>
+    </div>
+
+    <div id="footerContainer">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, eveniet.
+    </div>
+
+</body>
+</html>
