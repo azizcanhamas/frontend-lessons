@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        /*body'nin altindaki p etiketlerinden ilki yani ilk cocuk */
+        p:first-child{
+            color: red;
+        }
+
+        /*tüm p etiketlerinde ilk 'i' cocugunu seç*/
+        p i:first-child{
+            color: blue;
+        }
+
+        /*body altindaki ilk p icindeki i'leri sec*/
+        p:first-child i{
+            color: blueviolet;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <p>Coffee<i>Cem</i></p>
+    <p>Tea</p>
+    <p>Milk</p>
+
+    <p>Coffee   <i>Jale</i>     <i>Jale</i>     <i>Jale</i>     </p>
+    <p>Tea      <i>Murat</i>    <i>Murat</i>    <i>Murat</i>    </p>
+    <p>Milk     <i>Canan</i>    <i>Canan</i>    <i>Canan</i>    </p>
+
+</body>
+</html>

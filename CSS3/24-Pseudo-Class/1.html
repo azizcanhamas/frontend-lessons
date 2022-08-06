@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* sayfa hic ziyaret edilmediyse */
+        a:link{
+            color: red;
+        }
+
+        /* ziyaret edildiyse */
+        a:visited{
+            color: green;
+        }
+
+        /* fare ile üzerine gelindiği zaman */
+        a:hover{
+            color: hotpink;
+        }
+
+        /* tıklanırken */
+        a:active{
+            color: blue;
+        }
+
+        /* a etiketi altindaki contentClass'in ustune gelindigi zaman */
+        a.contentClass:hover{
+            color: rgb(0, 195, 255);
+        }
+
+        /* div altindaki div1'de hover ozelligi ile arka plan ve padding degerinin uygulanmasi  */
+        div.div1:hover{
+            background-color: rgb(109, 109, 6);
+            padding: 10px;
+        }
+
+        /*ClickMe butonu*/
+        div.clickMe{
+            margin-top: 50px;
+            text-align: center;
+            background-color: darkblue;
+            color: white;
+            padding: 50px;
+        }
+        div.clickMe:hover{
+            background-color: red;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <!-- CSS Pseudo Class
+            * What are Pseudo-classes?
+            * Syntax
+            * Anchor Pseudo-classes
+            * Pseudo-classes and CSS Classes
+            * Hover on <div>
+            * Simple Tooltip Hover
+            * CSS -The :first-child Pseudo-class
+            * Match the first <p> element
+            * Match the first <i> element in all <p> elements
+            * Match all <i> elements in all first child <p> elements
+            * CSS - The :lang Pseudo-class
+            * Use of :focus
+    -->
+
+    <h1>A etiketi Pseudo Class</h1>
+
+    <a href="https://google.com.tr">Google</a>
+    <a class="contentClass" href="#content">Content</a>
+
+    <div class="div1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, voluptate optio. Quos, modi consequatur? Reprehenderit.
+    </div>
+
+    <div class="clickMe">
+        Click Me!
+    </div>
+</body>
+</html>

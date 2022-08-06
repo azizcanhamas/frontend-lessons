@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        /* input etiketlerinde type degeri text olanlardan enabled olanlari sec. */
+        input[type=text]:enabled{
+            background: red;
+        }
+
+        
+        /* input etiketlerinde type degeri text olanlardan disabled olanlari sec. */
+        input[type=text]:disabled{
+            background: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form action="">
+        Ad Soyad:<input type="text" checked="checked" value="Aziz Can" name="cinsiyet"><br>
+        Mahalle :<input type="text" value="Kadin" value="Mecidiye"><br>
+        Semt    :<input type="text" value="Ortaköy"><br>
+        <!-- disabled verildigi icin pasif konumdadir. Value degistirilemez. -->
+        <!-- disabled degeri alan inputlar CSS'de disabled class'ini kullanir.
+            disabled verilmeyen inputlar otomatik olarak enabled class'ini kullanir. -->
+        İlçe    :<input type="text" value="Beşiktaş" disabled>
+    </form>    
+</body>
+
+</html>

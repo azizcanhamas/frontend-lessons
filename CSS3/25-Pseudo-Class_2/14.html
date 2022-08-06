@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        /* read-only olan inputlari sec */
+        input:read-only{
+            background-color: red;
+        }
+
+        /*hem okunabilir hem yazilabilir olan inputlari sec*/
+        input:read-write{
+            background-color: blue;
+        }
+
+        /*tum html etiketlerini sec, iki input'un kendi degeri oldugu icin etkilemez.*/
+        :root{
+            background-color: aqua;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- readonly verildigi icin yalnizca okunabilir, giris yapilamaz. -->
+    <input type="text" value="Aziz" readonly>
+
+    <!-- readonly degil, hem okunabilir hem yazilabilir. -->
+    <input type="text" value="Hamasoglu">
+</body>
+</html>

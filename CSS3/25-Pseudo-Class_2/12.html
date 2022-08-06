@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        /* required belirtilmeyen inputlari sec */
+        input:optional{
+           background-color: yellow; 
+        }
+
+        /* required belirtilen zorunlu inputlari sec */
+        input:required{
+            background-color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Ad required olmadigi icin optional'dir, opsiyoneldir. -->
+    Ad<input type="text"/>
+    <!-- required : zorunluluk anlami tasir.-->
+    Soyad<input type="text" required/>
+
+</body>
+</html>
