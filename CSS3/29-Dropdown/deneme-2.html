@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+
+        /* Mantık: anaDiv, display:inline-block özelligi sayesinde
+           Header ve optionlarin alani kadar alan kaplar. header ve optionlarin
+           sahip oldugu display:block ozelliginden dolayi hepsi alt alta yerlesir.  */
+
+        .anaDiv{
+            /* position: relative; */
+            display: inline-block;
+        }
+
+        .dropdownHeader{
+            /* minimum genislik ve yukseklik almasi icin */
+            min-width: 200px;
+            min-height: 100px;
+            
+            /* yazıyı ortalamak için */
+            text-align: center;
+            padding-top: 40px;
+
+            /* dropdown acildigi zaman genisleme olmamasi icin */
+            box-sizing: border-box;
+
+            /* arka plan, yazi renklendirmeleri, yazi kalinlastirma */
+            background-color: rgb(0, 0, 0);
+            color:white;
+            font-weight: bold;
+        }
+
+        .option1{
+            /* gorunmez yapmak icin */
+            display: none;
+
+            /* minimum genislik ve yukseklik almasi icin */
+            min-width: 200px;
+            min-height: 100px;
+
+            /* seceneklerin birbirine yapisik durmamasi icin */
+            margin-top: 1px;
+
+            /* kenarlik cerceve ekleme */
+            border: 3px solid black; 
+            
+            /* dropdown acildigi zaman genisleme olmamasi icin */
+            box-sizing: border-box; 
+
+            /* yazıyı ortalamak için */
+            padding-top: 40px;
+            text-align: center;
+            
+            /* arka plan ve yazi renklendirmesi */
+            background-color: rgb(57, 57, 57);
+            color: white;
+            
+        }
+
+        /* anaDiv'in ustune gelindigi zaman option1'i block olarak goster çünkü alt satıra inmesi lazım.
+            hover ozelligi Header'a verilmemeli, div'e verilmelidir. */
+        .anaDiv:hover .option1{
+            display: block;
+        }
+        
+    </style>
+
+</head>
+    <body>
+        <div class="anaDiv">
+            <div class="dropdownHeader">
+                İçecekler
+            </div>
+            <div class="option1">
+                Coffee
+            </div>
+            <div class="option1">
+                Tea
+            </div>
+            <div class="option1">
+                Milk
+            </div>
+        </div>
+    </body>
+</html>

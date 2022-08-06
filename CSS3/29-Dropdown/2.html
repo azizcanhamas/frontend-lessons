@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content{
+            position: absolute;
+            display: none;
+            background-color: aquamarine;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0,0,0.2);
+        }
+
+        .dropdown-content a{
+            /* a'larin alt alta dizilmesini istedigimiz icin */
+            display: block;
+            padding: 10px 5px;
+            border: 2px solid black;
+            color: rgb(113, 113, 113);
+            text-decoration: none;
+            right: 0;
+        }
+
+        .dropBtn{
+            background-color: green;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            border: none;
+            /* Fare imleci degistirme */
+            cursor: grab;
+        }
+
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+
+        .dropdown-content a:hover{
+            background-color: blue;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Hoverable Dropdown</h1>
+
+    <div class="dropdown" style="float: right;">
+        <button class="dropBtn">Butona tıkla!</button>
+        <div class="dropdown-content">
+            <a href="#Home">Home</a>
+            <a href="#Contact">Contact</a>
+            <a href="#About">Button</a>
+        </div>
+    </div>
+
+</body>
+</html>

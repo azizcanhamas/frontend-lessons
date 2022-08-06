@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Detayli aciklamalar icin diger orneklere bakiniz. */
+        span{
+            background-color: blue;
+            display: inline-block;
+            padding: 10px;
+            width: 100px;
+            text-align: center;
+            color: white;
+            border-radius: 20px;
+        }
+
+        .disDiv{
+            float: left;
+        }
+
+        .dropdown-content{
+            position: absolute;
+            display: none;
+            background-color: red;
+            box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            box-sizing: border-box;
+            border-radius: 20px;
+            width: 120px;
+            height: 50px; 
+        }
+
+        .disDiv:hover .dropdown-content{
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- CSS Dropdown 
+            * Basic Dropdown
+            * Dropdown Menu
+            * Right-aligned Dropdown Content
+            * Dropdown Image
+            * Dropdown Navbar
+            * Dropdown Menu inside a Navigation Bar
+    -->
+
+    <h1>Hoverable Dropdown</h1>
+
+    <div class="disDiv">
+        <span>Beni TIKLA</span>
+        <div class="dropdown-content">
+            <p>Coffee</p>
+        </div>
+    </div>
+
+</body>
+</html>

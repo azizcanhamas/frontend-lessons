@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* Mantık:  Buyuk resim acilmadigi zaman ana div olan dropdown kucuk resim kadar alan kaplar.
+                    Buyuk resim acildigi zaman kaplanilan alan buyuk resim ile kucuk resmin alaninin
+                    toplami kadardir. */
+
+        .dropdown{
+            /* parent oldugu icin relative */
+            position: relative;
+        }
+
+        .dropdown-content{
+            /* position:absolute olan nesneler parent'i relative ise parent'ini baz alir. */
+            position: absolute;
+
+            /* Buyuk resmi gostermiyoruz. */
+            display: none;
+
+            /* Bu ozellik sayesinde resim acildigi zaman sayfanin disina acilmiyor. İceri dogru aciliyor.    */
+            right: 0;
+        }
+
+        /* Ana div'in uzerine gelindigi zaman buyuk resmi block-level olarak gosteriyoruz. */
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+
+        .metin{
+            background-color: gray;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Hoverable Dropdown</h1>
+    
+    <div class="dropdown" style="float: right;">
+        <img  class="dropBtn" src="img/1.jpg" style="width: 100px; height:100px;" alt="">
+        <div class="dropdown-content">
+            <img src="img/1.jpg" alt="">
+            <div class="metin">Maria Forever!</div>
+        </div>
+    </div>
+
+</body>
+</html>
