@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        /* input[type=text] verilirse sadece input'u text olanlari secer */
+        input{
+            width: 100%;
+            
+            /* input text'in büyütülmesi */
+            padding: 12px 15px 12px 40px;
+
+            /*input'larin birbirinden uzaklastirilmasi*/
+            margin: 8px 0px;
+
+            /* input'lara border verilmesi */
+            border: 3px solid red;
+
+            /*border ve padding'lerden dolayi olan %100 tasmasini onler.*/
+            box-sizing: border-box;
+
+            /* input'un köselerini yuvarlatma */
+            border-radius: 10px;
+
+            /* input'un icinin boyanmasi */
+            background-color: rgb(7, 185, 185);
+
+            /* input'larda kullanicinin girdigi yazinin renginin degistirilmesi */
+            color: brown;
+
+            /*input text'in icine icon ekleme*/
+            background-image: url('img/search-icon.png');
+            /*tekrar etmesini engeller.*/
+            background-repeat: no-repeat;
+            /*pozisyonunu ayarlar.*/
+            background-position: 10px 5px;
+            /*imlecin icon'un yaninda baslamasi isteniyorsa padding degeri ile oynanmalidir.*/
+            /*sol kenardan padding arttirilabilir.*/
+        }
+
+        /* kullanici input box'ina tikladiginda focus gerceklesir. bu anda uygula */
+        /* input[type=text]:focus daha dogru bir kullanimdir.*/
+        input:focus{
+            background-color: rgb(17, 250, 0);
+        }
+    </style>
+
+</head>
+<body>
+    <label for="">Adınızı giriniz:</label>
+    <input type="text" name="ad">
+
+    <label for="">Soyadınızı giriniz:</label>
+    <input type="text" name="soyad">
+</body>
+</html>

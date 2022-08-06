@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        .gallery{
+            float: left;
+        }
+
+        .gallery img{
+            width: 100%;
+            height: auto;
+        }
+
+        .desc{
+            padding: 15px;
+            text-align: center;
+        }
+
+        .gallery:hover{
+            border: 1px solid maroon;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .responsive{
+            /* padding şart değil */
+            padding: 0px 6px;
+            width: 25%;
+            float: left;
+        }
+
+        .metin::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+        /* Çalıştığı gözlemlenemedi! */
+        /* 700px width altinda calisir. */
+        @media only screen and(max-width:700px) {
+            /* Yaptigimiz tasarimda resimlerin yanyana olmasini
+                belirleyen deger .responsive altindaki width degeridir. */
+        
+                .responsive{
+                    width: 50%;
+                }
+        }
+
+        /* 500px width altinda calisir. */
+        @media only screen and(max-width:500px) {
+            .responsive{
+                width: 100%;
+            }   
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- CSS Responsive Image Gallery 
+        * Mobil cihazlarda görüntünün güzel gözüktüğü siteler responsive'dir.
+        * Responsive tasarimlarda width degeri yuzdelik, height auto olmalidir.
+        * padding ve border kalinliginin width degerini bozmamasi icin
+            -> tum gallery divleri bir div icine daha alinir.
+            -> bu yeni divlere ayni class adi verilir.
+            -> * {box-sizing:border-box; }uygulanir.
+
+        * Biz manuel olarak ekranin belli bir piksel degerinin
+        altina dustugu zaman nesnelerinin konumunu ayarlayabiliriz.
+        Mesela 500px width altinda 1 adet resim, 500-700 araliginda 2 adet resim yanyana gosterebiliriz.
+    -->
+
+    <div class="responsive">
+        <div class="gallery">
+            <img src="img/1.jpg" alt=""/>
+            <div class="desc">Resim 1</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <img src="img/2.jpg" alt=""/>
+            <div class="desc">Resim 2</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <img src="img/3.jpg" alt=""/>
+            <div class="desc">Resim 3</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <img src="img/4.jpg" alt=""/>
+            <div class="desc">Resim 4</div>
+        </div>
+    </div>
+
+    <!-- responsive'e float left denildiği için yazı istenmeyen yere yerleşiyor. -->
+    <!-- float:left etkisinden kurtulmak icin metin::after kisminda yapilan tanimlama yapilmalidir. -->
+    <div class="metin">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus numquam recusandae, nobis tempore, fuga necessitatibus aut voluptatem non facilis impedit autem minima laudantium repellendus assumenda, consequuntur quo. Nobis, nisi cupiditate incidunt, aspernatur labore quidem nulla deserunt consequatur quasi atque ducimus dignissimos excepturi? Expedita culpa optio error unde at aliquam dolorem officiis corporis, incidunt ad. Porro, quaerat ullam veritatis eligendi officiis accusamus sapiente enim dolores similique deserunt, ipsam voluptas nisi aperiam dolore assumenda nobis beatae modi? Maxime exercitationem pariatur quidem eos doloremque repellendus, impedit odio. Blanditiis repudiandae ipsum minima doloribus, harum dicta! Animi asperiores incidunt repellat distinctio cum. Vero sunt odit placeat sapiente consequatur ullam quod modi assumenda! Facilis dolore eveniet iste quod impedit nam labore fuga architecto error optio. Exercitationem obcaecati veritatis non. Pariatur veniam animi reiciendis ratione minima at dolor nulla deleniti illo, dolores nihil et atque dolore, dolorum eveniet esse. Cum nulla hic doloribus maxime ullam magnam! Aliquam!</p>
+    </div>
+
+</body>
+</html>

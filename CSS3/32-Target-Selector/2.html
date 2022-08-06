@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        /* .tab class'inin altindaki divler */
+        .tab div{
+            display: none;
+        }
+
+        /* .tab altindaki divlerin target'ini sec */
+        .tab div:target{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab">
+        <a href="#div1">link1</a>
+        <a href="#div2">link2</a>
+        <a href="#div3">link3</a>
+
+        <div id="div1"><h1>Aziz</h1></div>
+        <div id="div2"><h1>Can</h1></div>
+        <div id="div3"><h1>Hamasoglu</h1></div>
+    </div>
+</body>
+</html>

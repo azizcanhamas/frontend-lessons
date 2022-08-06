@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* title degerinin icinde Can gecenleri sec */
+        [title~=Can]{
+            background-color: aqua;
+        }
+
+        /*title değeri başlangıçtan itibaren tamami Can ise seç*/
+        [title|=Can]{
+            border: 2px solid black;
+        }
+    </style>
+
+</head>
+<body>
+    <a href="https://google.com.tr" title="Link">Google</a>
+    <a href="https://sozcu.com.tr" target="_blank" title="Can">Sozcu</a>
+    <a href="https://hurriyet.com.tr" target="_top" title="Can An">Hurriyet</a>
+</body>
+</html>

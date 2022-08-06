@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* a etiketlerinde target degeri mevcut olanlari sec */
+        a[target]{
+            background-color: aquamarine;
+        }
+
+        /*a etiketlerinde target degeri _blank olani sec*/
+        a[target=_blank]{
+            border: 2px solid black;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- CSS Attribute Selector 
+            * :target selector
+            * [attribute] selector
+            * [attribute  = "value"] selector
+            * [attribute ~= "value"] selector
+            * [attribute ^= "value"] selector
+            * [attribute $= "value"] selector
+            * [attribute *= "value"] selector
+    -->
+
+    <a href="https://google.com.tr">Google</a>
+    <a href="https://sozcu.com.tr" target="_blank">Sozcu</a>
+    <a href="https://hurriyet.com.tr" target="_top">Hurriyet</a>
+</body>
+</html>

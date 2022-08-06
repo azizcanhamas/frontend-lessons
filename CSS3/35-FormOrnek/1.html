@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        /* tum elemanlari duzenli tutabilmek icin bir div'e aldik */
+        #container{
+            background-color: azure;
+            /* kenara cok yapismamasi icin ana div'e 10px padding */
+            padding: 10px;
+        }
+
+        input{
+            /* form input elemanlari responsive olmasi icin yuzdelik deger ve tam sayfayi kaplamali. */
+            width: 100%;
+            /* padding ve border gibi degerlerden dolayi sayfadan tasmamasi icin */
+            box-sizing: border-box;
+            /* form elemanlarinin birbirine yapismamasi icin */
+            margin: 15px 0;
+        }
+
+        /* button'u sec */
+        input[type=button]{
+            background-color: rgb(20, 136, 20);
+            /* asagi dogru genislet. */
+            padding: 5px 0px;
+            /* otomatik olarak eklenen border'i kaldir. */
+            border: none;
+            cursor: grab;
+        }
+
+        select{
+            width: 100%;
+            margin: 15px 0;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <label for="">First Name</label>
+        <input type="text" placeholder="Your first name">
+        <label for="">Last Name</label>
+        <input type="text" placeholder="Your last name">
+        <label for="">Country</label>
+        <select name="country" id="country">
+            <option value="Türkiye">Türkiye</option>
+            <option value="Almanya">Almanya</option>
+            <option value="Amerika">Amerika</option>
+        </select>
+        <input type="button" value="Send">
+        
+    </div>
+</body>
+</html>

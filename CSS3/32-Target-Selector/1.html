@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        /* target a etiketleri için geçerlidir. a etiketlerinin belirttiği etikete uygular. */
+        :target{
+            border: 1px solid red;
+            background-color: aquamarine;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Amaç: 1. içerik'e tiklandiginda p1 istenilen şekilde gözükecek -->
+    <!-- Aynı şekilde 2. içerik'e tiklandiginda p2 istenilen şekilde gözükecek -->
+    <p>
+        <!-- # ile css uygulanacak elementin id'si verilmelidir. -->
+        <a href="#p1">
+            1.İçerik
+        </a>
+    </p>
+    <p>
+        <a href="#p2">
+            2.İçerik
+        </a>
+    </p>
+
+
+    <p id="p1">Aziz</p>
+    <p id="p2">Can</p>
+
+</body>
+</html>
