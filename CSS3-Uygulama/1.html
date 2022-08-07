@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #header{
+            background-color: rgb(118, 150, 150);
+            text-align: center;
+            padding: 3%;
+        }
+
+        #navbar{
+            background-color: rgb(67, 67, 67);
+        }
+
+        li{
+            display: inline-block;
+            list-style: none;
+            color: white;
+            padding: 1%;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        li:hover{
+            background-color: blue;
+        }
+
+        #content{
+            width: 100%;
+            padding-top: 1%;
+        }
+
+        #left,#middle,#right{
+            /* divlerin yan yana gelmesi icin */
+            display: inline-block;
+            /* hepsi yan yana aksin */
+            float: left;
+            padding-bottom: 20px;        
+        }
+
+        #left{
+            width: 25%;
+        }
+
+        #middle{
+            width: 50%;
+        }
+
+        #right{
+            width: 25%;
+        }
+
+        /* float:left etkisinden kurtulma. bir nesneye float left verince ardindan hepsi yanina gitmeye calisiyor.
+            bunu onlemek icin kullanilir. Bunu yazmayinca footer yukari yerlesmeye calisiyor. */
+        #content::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        #footer{
+            background-color: rgb(80, 80, 80);
+            /* footer asagi dogru genislesin */
+            padding:5vh;
+            /* text'i ortala */
+            text-align: center;
+        }
+
+        /* ekran genisligi 700px'in altina inerse tum content divleri ekrani yatayda tam kaplasin */
+        @media screen and (max-width:700px) {
+            #left{
+                width: 100%;
+            }
+
+            #middle{
+                width: 100%;
+            }
+
+            #right{
+                width: 100%;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="header">
+        <h1>Header</h1>
+        <p>Resize the browser window to see the responsive effect.</p>
+    </div>
+
+    <div id="navbar">
+        <ul>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <div id="left">
+            <h1>Side</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, impedit quos minima similique quibusdam porro!</p>
+        </div>
+        <div id="middle">
+            <h1>Main Content</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, repudiandae ex rerum cumque sunt, nihil necessitatibus possimus dolor eveniet earum ullam delectus consequuntur laboriosam nisi voluptatem quos laudantium, eos facere dolorem sequi nemo harum aut! Possimus enim dignissimos assumenda. Exercitationem blanditiis ex aut dolor labore!</p>
+        </div>
+        <div id="right">
+            <h1>Side</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi animi cum aspernatur ad optio incidunt?</p>
+        </div>
+    </div>
+
+    <div id="footer">
+        Footer
+    </div>
+
+</body>
+</html>
