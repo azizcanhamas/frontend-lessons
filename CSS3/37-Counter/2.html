@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        /* ilk h1'den once body var. bundan dolayi body css'inde bir degisken tanimlanir. */
+        body{
+            counter-reset: x;
+        }
+        /* ilk h2 etiketinden once h1 var. bundan dolayi h1 etiketinde farkli bir isimde degisken tanimlanir.*/
+        h1{
+            counter-reset: y;
+        }
+
+        /* her h1 etiketinden once gelindiginde degiskeni bir arttir ve degiskeni yazdir. */
+        h1::before{
+            counter-increment: x;
+            content: counter(x) " : ";
+        }
+
+        /* her h2 etiketinden once gelindiginde diger degiskeni bir arttir ve degiskeni yazdir. */
+        h2::before{
+            counter-increment: y;
+            content:counter(x) "." counter(y) " : ";
+        }
+        
+
+    </style>
+</head>
+<body>
+    <!-- h1 etiketleri ust basliklari, h2 etiketleri alt basliklari tanimlar. -->
+    <h1>HTML CSS Eğitimi</h1>
+    <h2>HTML Eğitimi</h2>
+    <h2>CSS Eğitimi</h2>
+
+    <h1>Script Eğitimim</h1>
+    <h2>Javascript Eğitimi</h2>
+    <h2>VBScript Eğitimim</h2>
+</body>
+</html>

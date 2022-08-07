@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        /* padding ve border ozelliginin %25+%75 kuralini bozmamasi icin */
+        *{
+            box-sizing: border-box;
+        }
+
+        /* container ana div'dir. */
+        .container{
+            /* icindeki tum nesneleri ice dogru 15px kaydir. */
+            padding: 15px;
+            /* arka plan rengi */
+            background-color: azure;
+            /* koseleri 5px yuvarla. */
+            border-radius: 5px;
+        }
+
+        /* .col-25 classini tanimla. .col-25 classinin uyeleri sayfanin %25'ini kaplayacaktir */       
+        .col-25{
+            /* sola yasla (labellar %25 ve bu nesneler %75 oldugu icin 
+            toplami %100 yapiyor. bir label ve bir input bir satira sigar
+            . ardindan gelen elemanlar yer olmadigi icin alt satira iner.) */
+            float: left;
+            width: 25%;
+            /* labellari birbirinden uzaklastir */
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* .col-75 classini tanimla. .col-75 classinin uyeleri sayfanin %75'ini kaplayacaktir */
+        .col-75{
+            /* sola yasla (labellar %25 ve bu nesneler %75 oldugu icin 
+            toplami %100 yapiyor. bir label ve bir input bir satira sigar
+            . ardindan gelen elemanlar yer olmadigi icin alt satira iner.) */
+            float: left;
+            width: 75%;
+
+            /* inputlari birbirinden uzaklastir. */
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* her row'dan sonra float:left etkisinden kurtulmak icin */
+        .row::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        input[type=text],select,textarea{
+             /* input'lardan text,select,textarea nesneleri parent div'inin 100%'ünü kaplasin */
+            width: 100%;
+            /* 2px solid siyah cerceve ekle. */
+            border: 2px solid black;
+            /* her kenardan ice dogru 15px genislet. */
+            padding: 15px;
+            /* koselerini 5px yuvarlat */
+            border-radius: 5px;
+        }
+
+        /* textare yalnizca dikey boyutlandirilabilsin. */
+        textarea{
+            resize: vertical;
+        }
+
+        /* input'lardan type'i submit olanlari sec. */
+        input[type=submit]{
+            /* arka plan rengi yesil */
+            background-color: green;
+
+            /* yazi rengi beyaz */
+            color: white;
+            
+            /* butonun buyumesi icin dikeyde 15px yatayda 20px icten genisletme */
+            padding: 15px 20px;
+            
+            /* otomatik ekli gelen border'i kaldir. */
+            border: none;
+
+            /* div'in sagina yasla */
+            float: right;
+
+            /* fare ustune geldigi zaman isaretciyi pointer yap. */
+            cursor: pointer;
+
+            /* koselerini 5px yuvarla. */
+            border-radius:5px;
+        }
+
+        /* butonun ustune gelindigi zaman arka plan rengini degistir. */
+        input[type=submit]:hover{
+            background-color: rgb(96, 150, 14);
+        }
+
+        /* responsive çalışmıyor. */
+        @media screen and(max-width:768px) {
+            .col-25, .col-75, input[type=submit]{
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-25">
+                <label for="firstname">FirstName</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="firstname" placeholder="Your first name">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="lastname">Lastname</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="lastname" placeholder="Your last name">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="country">Country</label>
+            </div>
+            <div class="col-75">
+                <select name="country" id="">
+                    <option value="tr">Türkiye</option>
+                    <option value="en">United States</option>
+                    <option value="de">Deutschland</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="Subject">Subject</label>
+            </div>
+            <div class="col-75">
+                <textarea name="subject" placeholder="Your subject" style="height: 150px;"></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <input type="submit" value="Send">
+        </div>
+    </div>
+</body>
+</html>

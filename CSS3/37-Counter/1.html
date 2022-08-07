@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body{
+            /* sayac sifirla. degisken ismi x */
+            counter-reset: x;
+        }
+
+        /* h2 etiketlerinden once girilecek content */
+        h1::before{
+            /* arttirilacak olan degiskeni belirtiyoruz. */
+            counter-increment: x;
+            /* icerigi olusturuyoruz. */
+            content: "Section "+counter(x) ": ";
+        }
+    </style>
+</head>
+<body>
+    <!-- CSS Counter 
+            * Automatic Numbering with Counters
+            * Nesting Counters
+    -->
+
+    <h1>Aziz</h1>
+    <h2>Can</h2>
+    <h2>Hamasoglu</h2>
+    <h2>Aziz Can Hamasoglu</h2>
+</body>
+</html>

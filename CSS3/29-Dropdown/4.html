@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <style>
+
         .dropdown-content{
             position: absolute;
+            /* dropdown'i fare uzerine gelmedigi zaman gizlemek icin */
             display: none;
             background-color: aqua;
             min-width: 200px;
         }
 
+        /* a etiketi normalde inline'dir.
+        dropdown elemanlarinin alt alta gelmesi icin
+        dropdown altindaki a etiketlerine display:block ozelligi verilir. */
         .dropdown-content a{
             display: block;
             color: white;
@@ -20,28 +25,37 @@
             padding: 12px 15px;
         }
 
+        /* dropdown'in uzerine gelindigi zaman gorunur yap. */
         .Dropdown:hover .dropdown-content{
             display: block;
         }
 
+        /* dropdown elemanlarinin ustune gelindigi zaman arka plan rengini degistir. */
         .dropdown-content a:hover{
             background-color: hotpink;
         }
 
+        /* liste elemanlarinin yanyana gelmesi icin */
         li{
             float: left;
         }
 
-        li a, .dropbtn{
+        /* navbar ve dropdown elemanlarinin secilmesi */
+        li a{
+            /* butonlarin width-height degeri alabilmesi  icin */
             display: inline-block;
             text-decoration: none;
-            color: white;
+            color: rgb(255, 255, 255);
+            /* butonlarinin boyutunun arttirilmasi */
             padding: 15px 20px;
         }
 
         ul{
+            /* madde basliklarinin kaldirilmasi */
             list-style-type: none;
+            /* liste arka planinin rengi */
             background-color: black;
+
             overflow: hidden;
         }
 
@@ -52,18 +66,23 @@
 
 </head>
 <body>
+    <!-- navbar'lar yatay liste seklindedir. Bunun sirasiz bir liste olusturup icine <li> etiketleri ekliyoruz. -->
     <ul>
+        <!-- birinci ve ikinci butonlar. <a>'nin href ozelligi gidilecek sayfayi belirtmelidir. -->
         <li><a href="">Home</a></li>
         <li><a href="">News</a></li>
-        <li class="Dropdown">
 
+        <!-- navbar icinde bir buton ancak ustune gelindiginde dropdown acilacak. -->
+        <li class="Dropdown">
+            <!-- hicbir yere yonlendirmemesi icin js:void(0) -->
             <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
-            <div class="dropdown-content">
+            <!-- dropdown iceriklerini tutan div -->
+            <div class="dropdown-content">               
+                <!-- Dropdown acildiginda gozukecek elemanlar -->
                 <a href="">Link1</a>
                 <a href="">Link2</a>
                 <a href="">Link3</a>
             </div>
-
         </li>
     </ul>
 </body>
