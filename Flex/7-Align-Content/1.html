@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        .aziz{
+            display: flex;            
+            flex-flow: row wrap;
+            background-color: red;
+            justify-content: space-between;
+            height: 700px;
+            align-items: center;
+
+            /*  center: tum elemanlari ortaya alir. 
+                flex-end : dikey olarak en alta alir.
+                flex-start : dikey olarak en yukari alir.
+                space-around : dikey olarak esit bosluklarla ayirir.
+                space-between: en yukariya ve en alta bir kismini yapistirir,
+                                diger kismini dikey olarak ortaya alir.
+            */
+            align-content: center;
+        }
+
+        .aziz > div{
+            padding: 10px;
+            background-color: blue;
+            margin: 10px;
+            width: 100px;
+            height: 50px;
+
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Align-Content : Ana div cok buyukse ve icindeki div'ler cok
+        kucukse align-content kullanilabilir. -->
+
+    <div class="aziz">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+    </div>
+</body>
+</html>

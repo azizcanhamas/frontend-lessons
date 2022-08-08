@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        .aziz{
+            /* en onemli tanimlama */
+            display: flex;
+            background-color: red;
+        }
+
+        /* aziz sinifi altindaki divleri sec */
+        .aziz > div{
+            /* div'ler govdeye sahip ılsun. */
+            padding: 10px;
+            background-color: blue;
+            /* div'ler birbirinden ayrilsin. */
+            margin: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Flex Container 
+        * Birden fazla kutunun yan yana gelmesini istediğimizi varsayalım.
+        Bunun için yalnizca bir kutuyu işleme alıp, otomatik olarak
+        diğerleri ilk kutunun yanina yerleşecektir.
+    -->
+    <div class="aziz">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <!-- ne kadar div eklenirse eklensin bu yapi sayede tum kutular
+            ayni gorunumde olur. -->
+        <div>4</div>
+    </div>
+</body>
+</html>

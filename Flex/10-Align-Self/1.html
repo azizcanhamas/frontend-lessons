@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        .aziz{
+            display: flex;            
+            background-color: red;
+            height: 400px;
+            justify-content: center;
+        }
+
+        .aziz > div{
+            padding: 10px;
+            background-color: blue;
+            margin: 10px;
+            width: 100px;
+
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Align-Self : Bir item'i kendini baz alarak hizalamasidir.
+     -->
+
+     <!-- center : ortalar. -->
+     <!-- flex-start : dikey olarak en yukari alir. -->
+     <!-- flex-end : dikey olarak en alta alir. -->
+    <div class="aziz">
+        <div>1</div>
+        <div style="align-self: center;">2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+</body>
+</html>

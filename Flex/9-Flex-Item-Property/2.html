@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        .aziz{
+            display: flex;            
+            flex-direction: row;
+            background-color: red;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .aziz > div{
+            padding: 10px;
+            background-color: blue;
+            margin: 10px;
+            width: 100px;
+            height: 50px;
+
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Flex Item Shrink Property : İlgili item'i sigdirmak icin
+            herhangi bir kucultme isleminin yapilmamasini saglar.
+            Belirtilen en-boy degerlerini her zaman alir. 
+     -->
+
+    <div class="aziz">
+        <div style="">1</div>
+        <div style="">2</div>
+        <div style="">3</div>
+        <div style="">4</div>
+        <div style="flex-shrink: 0;">5</div>
+        <div style="">6</div>
+        <div style="">7</div>
+        <div style="">8</div>
+        <div style="">9</div>
+        <div style="">10</div>
+        <div style="">11</div>
+        <div style="">12</div>
+        <div style="">13</div>
+        <div style="">14</div>
+        <div style="">15</div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        .aziz{
+            /* bu tanimlama sarttir. */
+            display: flex;
+
+            /* div'lerin belirtilen boyutta kalmasini ve sigmayan
+            divlerin alt satira inmesini saglayacak. */
+            /* * no-wrap: wrap'in tam tersidir. baglama yapmaz.
+                * wrap-reverse: tersten baglama yapar. */
+            flex-wrap: wrap;
+
+            /* div'lerin yatay dizilmesini sagliyor. */
+            flex-direction: row;
+            background-color: red;
+        }
+
+        .aziz > div{
+            padding: 10px;
+            background-color: blue;
+            margin: 10px;
+            width: 100px;
+            height: 50px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="aziz">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <!-- 4 adet div ana div'in tamamini kaplamadigindan
+        CSS'de tanimlanan width-height degerleri tam olarak calisiyor.
+        Ancak bu div cok fazla olursa pencereyi kuculttugumuzde
+        bu width-height degerleri alinamayacaktir. Bunun icin
+        ana div'e flex-wrap:wrap tanimlamasi yapilir.
+        Bu sayede div'ler belirtilen genislikleri ve yukseklik
+        degerlerine sahip olur. Ve sigmayan divler alt satira iner. -->
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        .aziz{
+            display: flex;            
+            flex-flow: row wrap;
+            background-color: red;
+
+            /*  * center : ortalar. 
+                * flex-start: sol basa yaslar. 
+                * flex-end  : ana div'in sonuna yaslar. 
+                * space-around: esit bosluklarla dizer. en bastaki 
+                    div'in solu 1x genisliginde sagi 2x genisligindedir.
+                * space-between: en sol ve en sag nesneleri en kenarlara alir.
+                    aradaki nesneleri ortalar.
+            */
+            justify-content: space-around;
+        }
+
+        .aziz > div{
+            padding: 10px;
+            background-color: blue;
+            margin: 10px;
+            width: 100px;
+            height: 50px;
+
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Justify Content : Alt divlerin satir olarak hizalanmasini saglar. -->
+
+    <div class="aziz">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

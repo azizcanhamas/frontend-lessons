@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        .aziz{
+            display: flex;            
+            flex-flow: row wrap;
+            background-color: red;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .aziz > div{
+            padding: 10px;
+            background-color: blue;
+            margin: 10px;
+            width: 100px;
+            height: 50px;
+
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Flex Item : Ana div'in altindaki div'ler flex itemlardir.
+        Bu itemlar'in property'leri vardir. -->
+
+    <div class="aziz">
+        <!-- order : elemanlari siralamaya yarar.
+            * 1 yazan div'e order:4 verdigimiz icin 
+              en sagda konumlanacaktir. -->
+
+        <!-- flex-grow : itemlarin birbirleri ile
+            boyut olarak oranlanmasini saglar.
+            1,2,3 text'li divler 1 birim boyutunda iken
+            4 text'li div 2 birim boyutunda olacaktir. -->
+        <div style="order: 4; flex-grow: 1;">1</div>
+        <div style="order: 3; flex-grow: 1;">2</div>
+        <div style="order: 2; flex-grow: 1;">3</div>
+        <div style="order: 1; flex-grow: 2;">4</div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        .aziz{
+            display: flex;            
+            flex-flow: row wrap;
+            background-color: red;
+            justify-content: space-between;
+
+            /* ana div'i asagi dogru genislettik. ancak alt div'ler
+                hala en uste dayali. */
+            height: 250px;
+
+            /* bu tanimlama ile alt divler ana div'in dikey olarak
+                ortasina konumlanir. */
+            /* flex-start tanimlamasi ile dikey olarak en yukari konumlanirlar. */
+            align-items: center;
+        }
+
+        .aziz > div{
+            padding: 10px;
+            background-color: blue;
+            margin: 10px;
+            width: 100px;
+            height: 50px;
+
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Align Items: Alt divlerin sutun olarak hizalanmasini istedigimiz
+        zaman align items ozelligini kullaniriz.  -->
+    <div class="aziz">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
