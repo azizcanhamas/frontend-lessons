@@ -63,7 +63,6 @@ body{
     position: absolute;
     top:0;
     left:7vw;
-    /* padding: 15vw; */
     color: white;
     font-weight: bold;
     font-size: 4vw;
@@ -74,7 +73,6 @@ body{
     position: absolute;
     top:0;
     left:45vw;
-    /* padding: 15vw; */
 }
 
 #first-section-content-2 img{
@@ -121,8 +119,10 @@ span:nth-child(5) {
     padding: 2%;
 }
 
-.programming-language img{
-    /* width: 5% */
+.programming-language img:hover{
+    filter: brightness(120%);
+    filter: contrast(120%);
+    filter: drop-shadow(10px 10px 10px black);
 }
 
 .second-section{
@@ -130,6 +130,14 @@ span:nth-child(5) {
     position: relative;
     display: flex;
     padding: 25vw 42vw;
+    text-align: center;
+}
+
+.second-section h1{
+    color: white;
+    position: absolute;
+    top: 2vw;
+    left: 45vw;
 }
 
 .second-section-content{
@@ -152,7 +160,6 @@ span:nth-child(5) {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-
 #second-section-content-2{
     position: absolute;
     top:5vw;
@@ -160,4 +167,54 @@ span:nth-child(5) {
     padding: 15vw;
     background-color: rgba(255, 255, 255, 0.1);
 }
+
+.third-section{
+    background-color: #050A13;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5vw 5vw;
+    color: white;
+}
+
+
+.contact-content{
+    padding: 20vw 25vw;
+    color: white;
+    font-weight: bold;
+    font-size: 4vw;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer{
+    background-color: #050A13;
+    display: flex;
+    justify-content: space-around;
+    padding: 4vw 0;
+    color: white;
+}
+
+.left,.middle,.right{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10vw;
+}
+
+.middle{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10vw;
+}
+
+.right{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10vw;
+}
+
+.emptydiv{
+    padding: 2%;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    text-align: center;
+    font-size: 2rem;
+}
+
 
