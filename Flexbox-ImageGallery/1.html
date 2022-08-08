@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        /*  Default olarak body etiketine verilen margin ve padding degerlerinin sifirlanmasi
+            Nesnelere verilecek olan padding ve border degerlerinin nesnelerin boyutunu astirmamasi
+            icin box-sizin:border-box verildi. */
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* h1 etiketinde default olarak gelen margin degerinin sifirlanmasi */
+        /* Ekran yuksekligini baz alan goreceli olcu birimi ile font-size degeri atanmasi */
+        h1{
+            margin: 0;
+            font-size: 6vh;
+        }
+
+        /* Ekran yuksekligini baz alan goreceli olcu birimi ile font-size degeri atanmasi */
+        p{
+            font-size: 2vh;
+        }
+
+        /* Header ve footer kisimlarinin ekran genisligini baz alan olcu birimi ile
+            "YUKSEKLIK"inin belirlenmesi. Orani korumasi icin ekranin yatayi ile
+            header ve footer'in yuksekligi iliskilendirildi. */
+        #header,#footer{
+            padding: 2vw 0%;
+            width: 100%;
+            background-color: rgb(208, 113, 4);
+            text-align: center;
+        }
+
+        /* row kismi 4 adet div tasiyor. Bu divleri flexbox yontemiyle yatay olarak tasimasi icin
+            flex-direction:row verildi. Divlerin birbirinden uzaklasmasi icin padding verildi. */
+        .row{
+            display: flex;
+            flex-wrap:wrap;
+            flex-direction: row; /*default deger zaten*/ 
+            width: 100%;
+            padding: 1%;
+        }
+
+        /* .column 4 adet div'i temsil etmektedir. Bu div'lerin de her birine flexbox yontemi uygulandi.
+            .row classindan farkli olarak bu divler itemlari dikey tasimasi gerektiginden
+            flex-direction:column verildi.*/
+        .column{
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+            flex: 20%;
+            align-items: center;
+            padding: 1vw;
+        }
+
+        /* Resimlerin boyutu goreceli olmalidir. Bulundugu divin genisligin hepsini almalidir.
+            Kendi orjinal boyutlarini kullanMAMAlilar. Bunun icin width:100% verildi. */
+        img{
+            width: 100%;
+            margin-bottom: 2%;
+        }
+
+        /* Ekran cozunurlugu 700px altina dustugu zaman 1x4 olan yapi 2x4'e dusuruleceginden
+            her div'in genisligi 50%'e cikarildi. Bu sayede otomatik olarak diger 2 div
+            alt satira indi. */
+        @media screen and (max-width:700px){
+            .column{
+                flex: 50%;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- Header kismi. Sayfanin en ustunde yatayda sayfanin tamamini kaplayacak. -->
+    <!-- Responsive tasarim acisindan header'in padding degeri goreceli bir olcu birimi ile verilebilir. -->
+    <div id="header">
+        <!-- h1 ve p etiketleri responsive font-size degerleriyle boyutlandirilmalidir. -->
+        <h1>Image Gallery</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <!-- row ana div'dir. Govdeyi olusturur. İcinde buyuk ekranda yan yana 4 div tutacak.
+        700px altina dusuldugu zaman yan yana 2 div tutup diger 2 div'i asagida tutacak. -->
+    <div class="row">
+        <!-- Her column dikeyde 4 adet resim tutacak. -->
+        <div class="column">
+            <img src="img/1.jpg" alt="">
+            <img src="img/2.jpg" alt="">
+            <img src="img/3.jpg" alt="">
+            <img src="img/4.jpg" alt="">
+        </div>
+        <div class="column">
+            <img src="img/5.jpg" alt="">
+            <img src="img/6.jpg" alt="">
+            <img src="img/7.jpg" alt="">
+            <img src="img/8.jpg" alt="">        
+        </div>
+        <div class="column">
+            <img src="img/9.jpg" alt="">
+            <img src="img/10.jpg" alt="">
+            <img src="img/11.jpg" alt="">
+            <img src="img/12.jpg" alt="">        
+        </div>
+        <div class="column"> 
+            <img src="img/13.jpg" alt="">
+            <img src="img/14.jpg" alt="">
+            <img src="img/15.jpg" alt="">
+            <img src="img/16.jpg" alt="">        
+        </div>
+    </div>
+
+    <!-- Footer kismi. Sayfanin en altinda yatayda sayfanin tamamini kaplayacak. -->
+    <div id="footer">
+        <h1>Footer</h1>
+    </div>
+</body>
+</html>

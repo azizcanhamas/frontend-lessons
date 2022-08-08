@@ -1,0 +1,3 @@
+==== Resimlerin Elde Edilmesi
+* "picsum.photos/400/600" linkine gidildiği zaman random resimler geliyor.
+* Bu resimler istenildigi kadar kaydedilir.
