@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin: 0;
+    font-size: 5vh;
+}
+
+#desc{
+    background-color: yellow;
+    padding: 1%;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+}
+
+#header{
+    background-color: rgb(15, 148, 104);
+    text-align: center;
+    padding: 7vh;
+    color: white;
+}
+
+#navbar{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row ;
+}
+
+.link{
+    padding: 2vw;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 2vh;
+}
+
+#content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#leftside{
+    flex: 10%;
+    padding: 3vh 3vw;
+}
+
+#aboutme{
+    background-color: rgb(180, 180, 180);
+    padding: 30px;
+    margin-bottom: 40px;
+}
+#moretext{
+    background-color: rgb(180, 180, 180);
+    padding: 30px;
+}
+
+#img{
+    padding: 90px 0px;
+    background-color: black;
+}
+
+#moretext #img{
+    padding: 40px 0px;
+    margin-bottom: 30px;
+}
+
+
+#rightside{
+    flex: 60%; /* 70% : solution step 1*/
+    padding: 3vh 3vw;
+}
+
+#news{
+    background-color: rgb(180, 180, 180);
+    padding: 5vh 5vw;
+}
+
+#news:nth-child(1){
+    
+    margin-bottom: 40px;
+}
+
+#news #img{
+    padding: 160px 0px;
+}
+
+#footer{
+    background-color: rgb(15, 148, 104);
+    padding: 60px 0px;
+    text-align: center;
+}
+
+@media screen and (max-width:750px){
+    
+    #content{
+        /* bu komut uygulanmadan once 700px'in altina dusuldugu zaman
+        ilk once left-side gosteriliyordu. bu komutu uygulayinca ilk once
+        news kismi gosterildi!  */
+        flex-wrap: wrap-reverse;
+    }
+
+
+    #rightside{
+        /* padding-top:20px; */
+        flex: 100%;
+    }
+
+
+}
