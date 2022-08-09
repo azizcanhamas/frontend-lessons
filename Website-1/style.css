@@ -46,7 +46,7 @@ html,body{
 }
 #header .link a:hover{
     border-radius: 10px;
-    border-bottom: 2px solid white;
+    border-bottom: 10px solid white;
 }
 /* ============== Header End ======================== */
 
