@@ -1,9 +1,11 @@
 *{
     font-family: 'Ubuntu', sans-serif;
     box-sizing: border-box;
+    /* overflow: hidden; */
 }
 
-body{
+
+html,body{
     margin: 0;
     padding: 0;
 }
@@ -254,7 +256,6 @@ span:nth-child(5) {
     
     #first-section video{
         width: 179vw;
-        /* width: 100%; */
         transform: rotate(90deg);
         position: relative;
         right: 39.5vw;
@@ -295,7 +296,6 @@ span:nth-child(5) {
     }
     
     .second-section-content{
-        /* background-color: rgb(31,33,45,0.7); */
         top: 12vw;
     }
     
@@ -310,22 +310,12 @@ span:nth-child(5) {
     }
     /* ============================ */
     .third-section{
-        background-color: #050A13;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
         padding: 2vw 5vw 10vw 5vw;
-        color: white;
     }
     
     
     .contact-content{
         padding: 55vw 35vw;
-        color: white;
-        font-weight: bold;
-        font-size: 4vw;
-        background-color: rgba(255, 255, 255, 0.1);
     }
 
     .emptydiv{
@@ -333,12 +323,8 @@ span:nth-child(5) {
     }
 
     .footer{
-        background-color: #050A13;
-        display: flex;
-        justify-content: space-around;
         padding-top: 10vw;
         padding-bottom: 10vw ;
-        color: white;
     }
     
     .left{
