@@ -1,7 +1,7 @@
 *{
     font-family: 'Ubuntu', sans-serif;
     box-sizing: border-box;
-    /* overflow: hidden; */
+    overflow-x: hidden;
 }
 
 
@@ -17,6 +17,7 @@ html,body{
 
 #first-section video{
     width: 100%;
+    background-image: url(img/horizontal.gif);
 }
 
 
@@ -28,17 +29,18 @@ html,body{
     display: flex;
     justify-content: space-between;
     background-color: rgb(31,33,45,0.7);
+    border-bottom: 2px solid white;
 }
 #header a img{
-    margin:2vh 4vh;
-    width: 7vw;
+    margin:2.5vh 4vh;
+    width: 6vw;
 }
 #header .link{
     display: flex;
     color: white;
 }
 #header .link a{
-    padding: 4vw 2vw;
+    padding: 3vw 2vw;
     text-decoration: none;
     color: white;
     font-size: 1.5vw;
@@ -57,6 +59,7 @@ html,body{
     top: 12vw;
     left: 8vw;
     padding: 17vw 42vw;
+    border: 2px solid white;
 }
 
 #first-section-content-1{
@@ -66,21 +69,20 @@ html,body{
     color: white;
     font-weight: bold;
     font-size: 5vw;
-    margin: 0;
 }
 
 
 #first-section-content-2{
     position: absolute;
-    top:16.5%;
+    top:9%;
     left:45vw;
 }
 
 #first-section-content-2 img{
-    width: 25vw;
+    width: 33vw;
     filter:opacity(0.8);
-    filter:contrast(1.2);
-    filter:brightness(0.8);
+    filter:contrast(1.5);
+    filter:brightness(0.7);
 }
 
 span:nth-child(1){
@@ -91,9 +93,11 @@ span:nth-child(3){
 }
 
 /* ========== TEXT ANIMATION ============== */
-h1 {
+h5 {
   font-family: "Montserrat Medium";
   animation: scale 15s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  margin-top:5vw;
+  margin-bottom: 0;
 }
 span {
     display: inline-block;
@@ -107,6 +111,9 @@ span:nth-child(3) {
   animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 span:nth-child(5) {
+    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(7) {
     animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 @keyframes fade-in {
@@ -171,6 +178,7 @@ span:nth-child(5) {
     font-weight: bold;
     font-size: 4vw;
     background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
 }
 
 #second-section-content-2{
@@ -179,6 +187,7 @@ span:nth-child(5) {
     left:45vw;
     padding: 15vw;
     background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
 }
 
 .third-section{
@@ -189,15 +198,50 @@ span:nth-child(5) {
     align-items: center;
     padding: 2vw 5vw 5vw 5vw;
     color: white;
+    font-size: 1.5vw;
 }
 
 
 .contact-content{
-    padding: 20vw 25vw;
+    /* padding: 20vw 25vw; */
     color: white;
     font-weight: bold;
-    font-size: 4vw;
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contact-content table{
+    font-size: 1.5vw;
+    padding: 1vw 5vw;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+td{
+    padding: 1vw;
+
+}
+
+.contact-content table input[type=text],.contact-content table input[type=email]{
+    width: 28.5vw;
+    height: 2.5vw;
+}
+
+.contact-content table input[type=button]{
+    padding: 1vw 3vw;
+    margin-left: 20vw;
+    font-size: 1vw;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+
+}
+
+#emptyTD{
+    padding: 0px 10vw;
+}
+
+textarea{
+    width: 28.5vw;
+    resize: none;
 }
 
 .footer{
@@ -211,6 +255,7 @@ span:nth-child(5) {
 .left,.middle,.right{
     background-color: rgba(255, 255, 255, 0.1);
     padding: 10vw;
+    border: 2px solid white;
 }
 
 .middle{
@@ -237,28 +282,25 @@ span:nth-child(5) {
         height: 20vw;
     }
     #header a img{
-        width: 15vw;
+        width: 9.5vw;
     }
     #header .link a{
-        padding: 10vw 3vw;
+        padding: 8vw 3vw;
         font-size: 3vw;      
     }
 
     /* ============================ */
 
     #first-section{
-        padding-bottom: 40vw;
+        padding-bottom: 80vw;
+        background-image: url("img/horizontal.gif");
     }
 
-    #first-section video source{
-        src: url("vid/video-mobil-dikey.mp4");      
-    }
-    
     #first-section video{
-        width: 179vw;
+        width:190vw;
         transform: rotate(90deg);
         position: relative;
-        right: 39.5vw;
+        right: 47vw;
         margin-left: 0;
     }
 
@@ -277,16 +319,16 @@ span:nth-child(5) {
     }
 
     #first-section-content-2{
-        top: 20vw;
-        left: 35vw;
+        top: 23vw;
+        left: 30vw;
     }
     
     #first-section-content-2 img{
-        width: 52.5vw;
+        width: 60vw;
     }
     /* ============================== */
     .second-section{
-        padding: 85vw 42vw;
+        padding: 90vw 42vw;
         margin-top: 1vw;
     }
     
@@ -297,6 +339,7 @@ span:nth-child(5) {
     
     .second-section-content{
         top: 12vw;
+        padding: 70vw 40vw 82vw 40vw ;
     }
     
     #second-section-content-1{
@@ -313,10 +356,37 @@ span:nth-child(5) {
         padding: 2vw 5vw 10vw 5vw;
     }
     
+    .third-section > h1{
+        font-size: 7vw;
+    }
     
     .contact-content{
-        padding: 55vw 35vw;
+        padding: 8vw 5vw;
     }
+    
+    .contact-content table{
+        font-size: 3vw;
+    }
+    
+    .contact-content table input[type=text],.contact-content table input[type=email]{
+        width:40vw;
+        height: 5vw;
+    }
+    
+    .contact-content table input[type=button]{
+        padding: 0.5vw 5vw;
+        margin-left: 21vw;
+        font-size: 3vw;
+    }
+    
+    textarea{
+        width: 40vw;
+    }
+
+    /* =================================== */
+
+
+
 
     .emptydiv{
         font-size: 4vw;
