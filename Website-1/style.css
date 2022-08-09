@@ -263,6 +263,7 @@ span:nth-child(5) {
 
     .first-section-content{
         top: 35vw;
+        left: 4vw;
         padding: 40vw 45vw;
     }
 
@@ -306,6 +307,50 @@ span:nth-child(5) {
         top: 80vw;
         left:7vw;
         padding: 35vw;
+    }
+    /* ============================ */
+    .third-section{
+        background-color: #050A13;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2vw 5vw 10vw 5vw;
+        color: white;
+    }
+    
+    
+    .contact-content{
+        padding: 55vw 35vw;
+        color: white;
+        font-weight: bold;
+        font-size: 4vw;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .emptydiv{
+        font-size: 4vw;
+    }
+
+    .footer{
+        background-color: #050A13;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 10vw;
+        padding-bottom: 10vw ;
+        color: white;
+    }
+    
+    .left{
+        padding: 35vw;
+    }
+    
+    .middle{
+        display: none;
+    }
+    
+    .right{
+        display: none;
     }
 
     
